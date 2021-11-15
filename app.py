@@ -7,7 +7,7 @@ app = Flask(__name__)
 api = Api(app)
 run_with_ngrok(app) 
 
-with open('/content/model_pickle','rb') as file:
+with open('model_pickle','rb') as file:
   model = pickle.load(file)
 print("Loaded model from disk")
 
